@@ -11,7 +11,7 @@ export default function Welcome() {
           // process.env.REACT_APP_LOCALHOST_KEY
           "chat-app-user"
           )
-      ).username
+      )?.username
     );}
     UserNameGet();
   }, []);

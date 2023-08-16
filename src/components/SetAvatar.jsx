@@ -46,9 +46,9 @@ export default function SetAvatar() {
         image: avatars[selectedAvatar],
       });
 
-      if (data.isSet) {
+      if (data?.isSet) {
         user.isAvatarImageSet = true;
-        user.avatarImage = data.image;
+        user.avatarImage = data?.image;
         localStorage.setItem(
         //   process.env.REACT_APP_LOCALHOST_KEY,
         "chat-app-user",

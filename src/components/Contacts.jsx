@@ -14,8 +14,8 @@ export default function Contacts({ contacts, changeChat }) {
         "chat-app-user"
         )
     );
-    setCurrentUserName(data.username);
-    setCurrentUserImage(data.avatarImage);
+    setCurrentUserName(data?.username);
+    setCurrentUserImage(data?.avatarImage);
   }
 getData();
 } , []);

@@ -21,7 +21,7 @@ export default function Chat() {
       // process.env.REACT_APP_LOCALHOST_KEY
       "chat-app-user"
       )) {
-      navigate("/login");
+      navigate("/register");
     } else {
       setCurrentUser(
         await JSON.parse(
