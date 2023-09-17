@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Butterfly-The funky chat app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Visit The Website!](https://mern-chat-1.netlify.app/)
 
-## Available Scripts
+# Note
+- This is the frontend code for the project .
+  Check the backend code in the repo link below
 
-In the project directory, you can run:
+[See backend code here..](https://github.com/Debangshu97/mern-chat-backend)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Butterfly is chat application build with the power of MERN Stack. It is a realtime chat app with react, node.js and socket.io with mongodb and express. 
+The chat app is also responsive and it is styled with the styled components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following technologies:
 
-### `npm run build`
+- React
+- Nodejs
+- MongoDb
+- Express.js
+- Socket.io
+- Avatar Api
+- Axios
+- Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Objectives
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The idea is described in the following points:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This is a webapp with 3 pages. We see the Login Page at first , the Register page and the Chat page.
+- The users profile details and chat history are stored in a Mongodb Atlas Cluster
+- I used React styled components to style the webapp
+- I use React for the frontend and Nodejs , Expressjs for the backend and use Socket.io to relay information using websockets
+- I access the cool profile avatar from a free api.The api call is made through Axios post request because it converts the response directly to json.
+- Implement best practices and standards when structuring the files using nested elements, indentation, comments, and line breaks
+- I used netlify to deploy and host the app as it is very convenient and free.
+- I used Render to host the backend as a web service for free.
 
-### `npm run eject`
+## Installation Guide
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Requirements
+- [Nodejs](https://nodejs.org/en/download)
+- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Both should be installed and make sure mongodb is running.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```shell
+git clone https://github.com/Debangshu97/mern-chat-frontend
+cd mern-chat-frontend
+```
+Now create .env files 
+For Frontend and Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Now install the dependencies
+For Frontend
+```shell
+cd server
+yarn
+```
+For Backend
+```shell
+cd public
+yarn
+```
+We are almost done, Now just start the development server.
 
-## Learn More
+For Frontend.
+```shell
+cd public
+yarn start
+```
+For Backend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open another terminal in folder, Also make sure mongodb is running in background.
+```shell
+cd server
+yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Done! Now open localhost:3000 in your browser.
